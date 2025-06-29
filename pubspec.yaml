@@ -1,7 +1,7 @@
 name: threewins
-description: "A new Flutter project."
+description: "하루 3개의 작은 승리를 쌓으며 성취감을 키우는 셀프매니지먼트 앱"
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: 'none' # pub.dev에 배포하려면 이 줄을 삭제하세요
 
 
 version: 1.0.0+1
@@ -14,6 +14,15 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
+  
+  # 로컬 데이터 저장 (승리 기록 저장)
+  shared_preferences: ^2.2.2
+  
+  # UI 컴포넌트
+  table_calendar: ^3.0.9 # 캘린더 위젯
+  
+  # 유틸리티
+  intl: ^0.19.0 # 날짜 포맷팅
 
 dev_dependencies:
   flutter_test:
@@ -24,3 +33,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  
+  assets:
+    - assets/images/
